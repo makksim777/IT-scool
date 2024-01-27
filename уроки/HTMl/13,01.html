@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myAnim {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(180deg);
+            }
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            background-color: aqua;
+            color: blue;
+            padding: 15px 25px;
+            transition: all 0.8s ease-in-out 1s;
+        }
+        a:hover{
+            background-color: blue;
+            color: aqua;
+            transform:skew(20deg) translate(20px, 20px)rotate(20px)scale(1,2);
+            animation: myAnim 2s ease-out 0s infinite;
+
+        }
+        .inner-conteiner{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            position: relative;
+            border-radius: 50%;
+        }
+        .seconds-st
+        {
+            background-color: black;
+            position: absolute;
+            height:  2px;
+            width: 40%;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Press me</a>
+    <a href="#">Second line</a>
+    
+</body>
+</html>
